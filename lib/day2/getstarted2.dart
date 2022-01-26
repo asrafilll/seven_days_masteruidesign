@@ -1,6 +1,3 @@
-import 'dart:ffi';
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:seven_days_masteruidesign/size_helpers.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -38,14 +35,37 @@ class GetStarted2 extends StatelessWidget {
             height: displayHeight(context) * 0.06,
           ),
           Image.asset('assets/day2/gallery.png'),
-          ElevatedButton(
-            onPressed: () {},
+          SizedBox(
+            height: displayHeight(context) * 0.05,
+          ),
+          Container(
+            width: double.infinity,
+            height: 55,
+            child: ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                "Shape My Body",
+                style: GoogleFonts.lato(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black,
+                ),
+              ),
+              style: ElevatedButton.styleFrom(
+                elevation: 0,
+                primary: const Color(0xffAFEA0D),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: displayHeight(context) * 0.03,
+          ),
+          Center(
             child: Text(
-              "Shape My Body",
-              style: GoogleFonts.lato(
-                fontSize: 18,
-                fontWeight: FontWeight.w600,
-                color: Colors.black,
+              "Terms & Condtions",
+              style: GoogleFonts.poppins(
+                fontWeight: FontWeight.w400,
+                decoration: TextDecoration.underline,
               ),
             ),
           ),
