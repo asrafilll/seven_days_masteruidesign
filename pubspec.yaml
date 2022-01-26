@@ -22,6 +22,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/day1/
+    - assets/day2/
 
   # fonts:
   #   - family: Schyler
