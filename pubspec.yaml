@@ -24,6 +24,7 @@ flutter:
     - assets/day1/
     - assets/day2/
     - assets/day3/
+    - assets/day4/
 
   # fonts:
   #   - family: Schyler

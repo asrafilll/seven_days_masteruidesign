@@ -106,9 +106,9 @@ class SignIn2 extends StatelessWidget {
               child: TextButton(
                 onPressed: () {},
                 style: TextButton.styleFrom(
-                  backgroundColor: const Color(0xffFCAC15),
+                  backgroundColor: const Color(0xff5468FF),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(17),
+                    borderRadius: BorderRadius.circular(50),
                   ),
                 ),
                 child: Text(
@@ -116,7 +116,7 @@ class SignIn2 extends StatelessWidget {
                   style: GoogleFonts.openSans(
                     fontWeight: FontWeight.w600,
                     fontSize: 18,
-                    color: const Color(0xff6B4909),
+                    color: Colors.white,
                   ),
                 ),
               ),
@@ -130,9 +130,13 @@ class SignIn2 extends StatelessWidget {
               child: TextButton(
                 onPressed: () {},
                 style: TextButton.styleFrom(
-                  backgroundColor: const Color(0xffF2f2f2),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(17),
+                    borderRadius: BorderRadius.circular(50),
+                    side: const BorderSide(
+                      style: BorderStyle.solid,
+                      color: Color(0xffD3D3D3),
+                      width: 1,
+                    ),
                   ),
                 ),
                 child: Text(

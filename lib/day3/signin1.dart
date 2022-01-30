@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:seven_days_masteruidesign/size_helpers.dart';
 
-class SignIn1 extends StatelessWidget {
+class SignIn1 extends StatefulWidget {
   const SignIn1({Key? key}) : super(key: key);
 
+  @override
+  State<SignIn1> createState() => _SignIn1State();
+}
+
+class _SignIn1State extends State<SignIn1> {
   @override
   Widget build(BuildContext context) {
     bool _hidePassword = true;
