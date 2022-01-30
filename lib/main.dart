@@ -7,6 +7,8 @@ import 'package:seven_days_masteruidesign/day3/signin1.dart';
 import 'package:seven_days_masteruidesign/day3/signin2.dart';
 import 'package:seven_days_masteruidesign/day4/empty1.dart';
 import 'package:seven_days_masteruidesign/day4/empty2.dart';
+import 'package:seven_days_masteruidesign/day5/rating1.dart';
+import 'package:seven_days_masteruidesign/day5/rating2.dart';
 
 void main() {
   runApp(SevenDays());
@@ -17,7 +19,7 @@ class SevenDays extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: EmptyState2(),
+      home: Rating2(),
     );
   }
 }
