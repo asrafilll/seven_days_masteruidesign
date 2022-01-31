@@ -65,7 +65,7 @@ class _Rating2State extends State<Rating2> {
                 ],
               ),
               SizedBox(
-                height: displayHeight(context) * 0.05,
+                height: displayHeight(context) * 0.04,
               ),
               Container(
                 width: double.infinity,
@@ -85,7 +85,7 @@ class _Rating2State extends State<Rating2> {
                 ),
               ),
               SizedBox(
-                height: displayHeight(context) * 0.03,
+                height: displayHeight(context) * 0.02,
               ),
               SizedBox(
                 width: double.infinity,
@@ -97,7 +97,7 @@ class _Rating2State extends State<Rating2> {
                       borderRadius: BorderRadius.circular(17),
                     ),
                     padding: const EdgeInsets.symmetric(
-                      vertical: 14,
+                      vertical: 18,
                       horizontal: 70,
                     ),
                   ),
