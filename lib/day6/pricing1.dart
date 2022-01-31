@@ -168,6 +168,43 @@ class _Pricing1State extends State<Pricing1> {
           ),
         ],
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 70,
+          width: double.infinity,
+          decoration: const BoxDecoration(
+            color: Color(0xff6050E7),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 20,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Text(
+                  "Upgrade Now",
+                  style: GoogleFonts.poppins(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white,
+                  ),
+                ),
+                const Spacer(),
+                IconButton(
+                  icon: Image.asset(
+                    'assets/day6/arrow-right-circle.png',
+                    width: 24,
+                    height: 24,
+                  ),
+                  onPressed: () {},
+                  color: Colors.white,
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
