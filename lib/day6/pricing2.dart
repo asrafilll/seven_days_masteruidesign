@@ -97,9 +97,25 @@ class Pricing2 extends StatelessWidget {
               SizedBox(
                 height: displayHeight(context) * 0.07,
               ),
-              SizedBox(
+              Container(
                 width: double.infinity,
                 height: 55,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0xffE57C73).withOpacity(0.3),
+                      blurRadius: 20.0,
+                      spreadRadius: 10.0,
+                      offset: const Offset(
+                        0.0,
+                        10.0,
+                      ),
+                    ),
+                  ],
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(30),
+                  ),
+                ),
                 child: TextButton(
                   onPressed: () {},
                   style: TextButton.styleFrom(
@@ -109,7 +125,9 @@ class Pricing2 extends StatelessWidget {
                     ),
                   ),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      const Spacer(),
                       Text(
                         "Subscribe Now",
                         style: GoogleFonts.openSans(
@@ -118,16 +136,26 @@ class Pricing2 extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
+                      const Spacer(),
                       Image.asset(
                         // 'assets/day6/btn_arrow.png',
-                        'assets/day6/features.png',
-                        width: 41,
-                        height: 41,
+                        'assets/day6/day6_btn.png',
                       ),
                     ],
                   ),
                 ),
               ),
+              SizedBox(
+                height: displayHeight(context) * 0.03,
+              ),
+              Text(
+                "Contact Support",
+                style: GoogleFonts.poppins(
+                  color: Colors.white,
+                  fontSize: 16,
+                  decoration: TextDecoration.underline,
+                ),
+              )
             ],
           ),
         ),
